@@ -33,6 +33,11 @@ const getNetworkClient = async (
     });
 
     provider = new providers.JsonRpcProvider();
+  } else if (network === 'playground') {
+    provider = new providers.JsonRpcProvider(
+      'https://playground.colony.io/rpc/',
+    );
+    loader = new NetworkLoader({ network: 'mainnet' });
   } else {
     loader = new NetworkLoader({ network });
     provider = new InfuraProvider(network, infuraProjectId, verbose);
