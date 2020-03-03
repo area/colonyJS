@@ -1,6 +1,6 @@
 {
     "name": "@area/colony-js-client",
-    "version": "1.14.6-playground.0",
+    "version": "1.14.6-playground.1",
     "description": "Reference implementation of the Colony API",
     "keywords": [
         "ethers",
@@ -80,7 +80,6 @@
     },
     "gitHead": "14c09f1b0b5bfe86e79b3717820a1465fa9b57f1",
     "publishConfig": {
-    "access": "public"
+        "access": "public"
     }
-
 }
