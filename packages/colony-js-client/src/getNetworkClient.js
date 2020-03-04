@@ -36,6 +36,7 @@ const getNetworkClient = async (
   } else if (network === 'playground') {
     provider = new providers.JsonRpcProvider(
       'https://playground.colony.io/rpc/',
+      { chainId: 515 },
     );
     loader = new NetworkLoader({ network: 'mainnet' });
   } else {
